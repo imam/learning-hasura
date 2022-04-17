@@ -1,15 +1,9 @@
 import { gql, useQuery } from "@apollo/client";
 import { Card, Grid, Page, Text } from "@geist-ui/react";
-
-type Article = {
-  __typename: string;
-  id: number;
-  title: string;
-  rating: number;
-};
+import { Subscription_Root } from "./generated/graphql";
 
 export function App() {
-  const { data, loading } = useQuery<{ _helloworld_article: Article[] }>(gql`
+  const { data, loading } = useQuery<Subscription_Root>(gql`
     query MyQuery {
       _helloworld_article {
         id
