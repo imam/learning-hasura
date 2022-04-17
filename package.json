@@ -7,10 +7,14 @@
     "@apollo/client": "^3.5.10",
     "@geist-ui/react": "^2.2.5",
     "graphql": "^16.3.0",
+    "parcel": "^2.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "process": "^0.11.10"
+  },
+  "scripts": {
+    "dev": "parcel src/index.html"
   }
 }
