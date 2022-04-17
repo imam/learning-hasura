@@ -18,7 +18,6 @@ export function App() {
       }
     }
   `);
-  console.log(data);
   return (
     <Page>
       <Grid.Container gap={2} justify="center" height="100px">
